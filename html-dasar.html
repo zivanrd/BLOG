@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Algoritma</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#2d89ef;
+            color:white;
+            padding:25px;
+            text-align:center;
+        }
+
+        nav{
+            background:#1d5fb8;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:30px auto;
+            display:grid;
+            grid-template-columns:2fr 1fr;
+            gap:20px;
+        }
+
+        .posts{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 5px 10px rgba(0,0,0,.1);
+        }
+
+        .card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    margin:10px 0;
+        }
+
+        .card button{
+            background:#2d89ef;
+            color:white;
+            border:none;
+            padding:10px 18px;
+            border-radius:5px;
+            cursor:pointer;
+            margin-top:10px;
+        }
+
+        .card button:hover{
+            background:#1d5fb8;
+        }
+
+        aside{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+
+        footer{
+            text-align:center;
+            background:#222;
+            color:white;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        @media(max-width:800px){
+            .container{
+                grid-template-columns:1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+<header>
+    <h1>🌐 Belajar HTML Dasar</h1>
+    <p>Mengenal dasar-dasar HTML sebagai fondasi dalam membuat website.</p>
+</header>
+Apa Itu HTML?</h2>
+
+<p>
+HTML merupakan singkatan dari <b>HyperText Markup Language</b>. HTML adalah bahasa markup yang digunakan untuk membuat struktur sebuah halaman website. Dengan HTML, kita dapat membuat judul, paragraf, gambar, tabel, tombol, formulir, hingga berbagai elemen lain yang ditampilkan oleh browser.
+</p>
+
+<p>
+HTML bukan bahasa pemrograman karena tidak digunakan untuk membuat logika seperti perulangan atau perhitungan. HTML hanya mengatur susunan isi halaman agar dapat dibaca dan ditampilkan dengan baik oleh browser.
+</p>
+
+<hr>
+
+<h2>Sejarah HTML</h2>
+
+<p>
+HTML pertama kali diperkenalkan oleh Tim Berners-Lee pada tahun 1991. Tujuan awalnya adalah memudahkan pertukaran dokumen melalui internet. Seiring berkembangnya teknologi, HTML mengalami banyak pembaruan hingga kini menggunakan HTML5 yang memiliki fitur lebih lengkap.
+</p>
+
+<hr>
+
+<h2>Mengapa Harus Belajar HTML?</h2>
+
+<p>
+HTML merupakan dasar dari semua website yang ada di internet. Sebelum mempelajari CSS atau JavaScript, seseorang harus memahami HTML terlebih dahulu.
+</p>
+
+<ul>
+<li>Mudah dipelajari oleh pemula.</li>
+<li>Menjadi dasar pembuatan website.</li>
+<li>Dapat dipadukan dengan CSS dan JavaScript.</li>
+<li>Digunakan oleh hampir semua website.</li>
+<li>Mudah dikembangkan menjadi website profesional.</li>
+</ul>
+
+<hr>
+
+<h2>Struktur Dasar HTML</h2>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Website Pertama&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Halo Dunia&lt;/h1&gt;
+    &lt;p&gt;Selamat datang di website saya.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+<p>
+Semua halaman HTML memiliki struktur dasar seperti di atas agar browser dapat memahami isi dokumen dengan benar.
+</p>
+
+<hr>
+
+<h2>Tag HTML yang Sering Digunakan</h2>
+
+<ul>
+<li>&lt;html&gt; : Tag utama HTML.</li>
+<li>&lt;head&gt; : Informasi halaman.</li>
+<li>&lt;body&gt; : Isi website.</li>
+<li>&lt;h1&gt; sampai &lt;h6&gt; : Judul.</li>
+<li>&lt;p&gt; : Paragraf.</li>
+<li>&lt;a&gt; : Link.</li>
+<li>&lt;img&gt; : Menampilkan gambar.</li>
+<li>&lt;table&gt; : Membuat tabel.</li>
+<li>&lt;form&gt; : Membuat formulir.</li>
+</ul>
+
+<hr>
+
+<h2>Contoh Membuat Judul dan Paragraf</h2>
+
+<pre>
+&lt;h1&gt;Belajar HTML&lt;/h1&gt;
+
+&lt;p&gt;
+HTML adalah bahasa markup.
+&lt;/p&gt;
+</pre>
+
+<hr>
+
+<h2>Contoh Membuat Link</h2>
+
+<pre>
+&lt;a href="index.html"&gt;
+Kembali ke Beranda
+&lt;/a&gt;
+</pre>
+
+<hr>
+
+<h2>Contoh Menampilkan Gambar</h2>
+
+<pre>
+&lt;img src="gambar/html.jpg"
+alt="HTML"&gt;
+</pre>
+
+<hr>
+
+<h2>Contoh Membuat List</h2>
+
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<hr>
+
+<h2>HTML, CSS, dan JavaScript</h2>
+
+<p>
+Dalam pengembangan website, HTML, CSS, dan JavaScript saling melengkapi.
+</p>
+
+<ul>
+<li><b>HTML</b> mengatur struktur halaman.</li>
+<li><b>CSS</b> mengatur tampilan.</li>
+<li><b>JavaScript</b> membuat website menjadi interaktif.</li>
+</ul>
+
+<hr>
+
+<h2>Tips Belajar HTML</h2>
+
+<ul>
+<li>Pelajari tag dasar terlebih dahulu.</li>
+<li>Sering latihan membuat halaman web.</li>
+<li>Gunakan VS Code.</li>
+<li>Gunakan Live Server.</li>
+<li>Jangan takut mencoba.</li>
+<li>Pelajari CSS setelah memahami HTML.</li>
+</ul>
+
+<hr>
+
+<h2>Kesalahan yang Sering Dilakukan Pemula</h2>
+
+<ul>
+<li>Lupa menutup tag HTML.</li>
+<li>Salah menulis nama file.</li>
+<li>Penempatan gambar tidak sesuai folder.</li>
+<li>Salah menulis atribut.</li>
+<li>Tidak menggunakan struktur HTML lengkap.</li>
+</ul>
+
+<hr>
+
+<h2>Kesimpulan</h2>
+
+<p>
+HTML adalah fondasi utama dalam pembuatan website. Dengan memahami HTML, seseorang dapat membuat struktur halaman web yang rapi dan mudah dikembangkan menggunakan CSS serta JavaScript. Menguasai HTML merupakan langkah awal yang sangat penting bagi siapa pun yang ingin menjadi seorang web developer.
+</p>
+
+<br>
+
+<button class="btn" onclick="window.location.href='index.html'">
+🏠 Kembali ke Beranda
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>
